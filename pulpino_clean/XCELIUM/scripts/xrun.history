@@ -1,0 +1,1 @@
+s1(07Nov2024:10:36:01):  xrun -64bit -f ../scripts/sim.args -access +rwc -define STIM_PATH="../" -define PULP_FPGA_EMUL -disable_sem2009 -v93 -timescale 1ps/1ps -simvisargs ’-input sim_wave.tcl’ -top tb -gui 

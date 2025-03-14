@@ -1,0 +1,190 @@
+xrun(64): 21.03-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	21.03-s009: Started on Nov 07, 2024 at 10:36:01 CET
+xrun
+	-64bit
+	-f ../scripts/sim.args
+		-define SYNTHESIS
+		-INCDIR ../../RTL/rtl/includes
+		-INCDIR ../../RTL/tb
+		-INCDIR ../../RTL/ips/riscv/include
+		-INCDIR ../../RTL/ips/axi/axi_node
+		-INCDIR ../../RTL/ips/apb/apb_event_unit/include
+		-INCDIR ../../RTL/ips/apb/apb_i2c
+		-INCDIR ../../RTL/ips/adv_dbg_if/rtl
+		../../RTL/ips/riscv/include/apu_core_package.sv
+		../../RTL/ips/riscv/include/riscv_defines.sv
+		../../RTL/ips/riscv/include/riscv_tracer_defines.sv
+		../../RTL/ips/riscv/riscv_alu.sv
+		../../RTL/ips/riscv/riscv_alu_basic.sv
+		../../RTL/ips/riscv/riscv_alu_div.sv
+		../../RTL/ips/riscv/riscv_cs_registers.sv
+		../../RTL/ips/riscv/riscv_debug_unit.sv
+		../../RTL/ips/riscv/riscv_int_controller.sv
+		../../RTL/ips/riscv/riscv_hwloop_controller.sv
+		../../RTL/ips/riscv/riscv_hwloop_regs.sv
+		../../RTL/ips/riscv/riscv_if_stage.sv
+		../../RTL/ips/riscv/riscv_prefetch_buffer.sv
+		../../RTL/ips/riscv/riscv_prefetch_L0_buffer.sv
+		../../RTL/ips/riscv/riscv_apu_disp.sv
+		../../RTL/ips/riscv/riscv_fetch_fifo.sv
+		../../RTL/ips/riscv/riscv_L0_buffer.sv
+		../../RTL/ips/riscv/riscv_compressed_decoder.sv
+		../../RTL/ips/riscv/riscv_controller.sv
+		../../RTL/ips/riscv/riscv_core.sv
+		../../RTL/ips/riscv/riscv_decoder.sv
+		../../RTL/ips/riscv/riscv_ex_stage.sv
+		../../RTL/ips/riscv/riscv_id_stage.sv
+		../../RTL/ips/riscv/riscv_load_store_unit.sv
+		../../RTL/ips/riscv/riscv_register_file.sv
+		../../RTL/ips/riscv/riscv_mult.sv
+		../../RTL/rtl/components/pulp_clock_gating.sv
+		../../RTL/rtl/components/cluster_clock_gating.sv
+		../../RTL/rtl/components/cluster_clock_inverter.sv
+		../../RTL/rtl/components/cluster_clock_mux2.sv
+		../../RTL/rtl/components/rstgen.sv
+		../../RTL/rtl/components/pulp_clock_inverter.sv
+		../../RTL/rtl/components/pulp_clock_mux2.sv
+		../../RTL/rtl/components/generic_fifo.sv
+		../../RTL/rtl/components/sp_ram.sv
+		../../RTL/rtl/axi2apb_wrap.sv
+		../../RTL/rtl/periph_bus_wrap.sv
+		../../RTL/rtl/core2axi_wrap.sv
+		../../RTL/rtl/axi_node_intf_wrap.sv
+		../../RTL/rtl/axi_spi_slave_wrap.sv
+		../../RTL/rtl/axi_slice_wrap.sv
+		../../RTL/rtl/axi_mem_if_SP_wrap.sv
+		../../RTL/rtl/core_region.sv
+		../../RTL/rtl/instr_ram_wrap.sv
+		../../RTL/rtl/sp_ram_wrap.sv
+		../../RTL/rtl/boot_code.sv
+		../../RTL/rtl/boot_rom_wrap.sv
+		../../RTL/rtl/peripherals.sv
+		../../RTL/rtl/ram_mux.sv
+		../../RTL/rtl/pulpino_top.sv
+		../../RTL/rtl/clk_rst_gen.sv
+		../../RTL/ips/axi/axi_node/apb_regs_top.sv
+		../../RTL/ips/axi/axi_node/axi_address_decoder_AR.sv
+		../../RTL/ips/axi/axi_node/axi_address_decoder_AW.sv
+		../../RTL/ips/axi/axi_node/axi_address_decoder_BR.sv
+		../../RTL/ips/axi/axi_node/axi_address_decoder_BW.sv
+		../../RTL/ips/axi/axi_node/axi_address_decoder_DW.sv
+		../../RTL/ips/axi/axi_node/axi_AR_allocator.sv
+		../../RTL/ips/axi/axi_node/axi_ArbitrationTree.sv
+		../../RTL/ips/axi/axi_node/axi_AW_allocator.sv
+		../../RTL/ips/axi/axi_node/axi_BR_allocator.sv
+		../../RTL/ips/axi/axi_node/axi_BW_allocator.sv
+		../../RTL/ips/axi/axi_node/axi_DW_allocator.sv
+		../../RTL/ips/axi/axi_node/axi_FanInPrimitive_Req.sv
+		../../RTL/ips/axi/axi_node/axi_multiplexer.sv
+		../../RTL/ips/axi/axi_node/axi_node.sv
+		../../RTL/ips/axi/axi_node/axi_node_wrap.sv
+		../../RTL/ips/axi/axi_node/axi_node_wrap_with_slices.sv
+		../../RTL/ips/axi/axi_node/axi_regs_top.sv
+		../../RTL/ips/axi/axi_node/axi_request_block.sv
+		../../RTL/ips/axi/axi_node/axi_response_block.sv
+		../../RTL/ips/axi/axi_node/axi_RR_Flag_Req.sv
+		../../RTL/ips/apb/apb_node/apb_node.sv
+		../../RTL/ips/apb/apb_node/apb_node_wrap.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_MP_Hybrid_multi_bank.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_multi_bank.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP_hybr.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_DP.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_mem_if_SP.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_read_only_ctrl.sv
+		../../RTL/ips/axi/axi_mem_if_DP/axi_write_only_ctrl.sv
+		../../RTL/ips/axi/axi_spi_slave/axi_spi_slave.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_controller.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_regs.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_rx.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_syncro.sv
+		../../RTL/ips/axi/axi_spi_slave/spi_slave_tx.sv
+		../../RTL/ips/apb/apb_uart/apb_uart.vhd
+		../../RTL/ips/apb/apb_uart/slib_clock_div.vhd
+		../../RTL/ips/apb/apb_uart/slib_counter.vhd
+		../../RTL/ips/apb/apb_uart/slib_edge_detect.vhd
+		../../RTL/ips/apb/apb_uart/slib_fifo.vhd
+		../../RTL/ips/apb/apb_uart/slib_input_filter.vhd
+		../../RTL/ips/apb/apb_uart/slib_input_sync.vhd
+		../../RTL/ips/apb/apb_uart/slib_mv_filter.vhd
+		../../RTL/ips/apb/apb_uart/uart_baudgen.vhd
+		../../RTL/ips/apb/apb_uart/uart_interrupt.vhd
+		../../RTL/ips/apb/apb_uart/uart_receiver.vhd
+		../../RTL/ips/apb/apb_uart/uart_transmitter.vhd
+		../../RTL/ips/apb/apb_gpio/apb_gpio.sv
+		../../RTL/ips/apb/apb_event_unit/apb_event_unit.sv
+		../../RTL/ips/apb/apb_event_unit/generic_service_unit.sv
+		../../RTL/ips/apb/apb_event_unit/sleep_unit.sv
+		../../RTL/ips/apb/apb_spi_master/apb_spi_master.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_apb_if.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_clkgen.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_controller.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_fifo.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_rx.sv
+		../../RTL/ips/apb/apb_spi_master/spi_master_tx.sv
+		../../RTL/ips/apb/apb_pulpino/apb_pulpino.sv
+		../../RTL/ips/apb/apb_fll_if/apb_fll_if.sv
+		../../RTL/ips/axi/core2axi/core2axi.sv
+		../../RTL/ips/apb/apb_timer/apb_timer.sv
+		../../RTL/ips/apb/apb_timer/timer.sv
+		../../RTL/ips/axi/axi2apb/AXI_2_APB.sv
+		../../RTL/ips/axi/axi2apb/AXI_2_APB_32.sv
+		../../RTL/ips/axi/axi2apb/axi2apb.sv
+		../../RTL/ips/axi/axi2apb/axi2apb32.sv
+		../../RTL/ips/apb/apb_i2c/apb_i2c.sv
+		../../RTL/ips/apb/apb_i2c/i2c_master_bit_ctrl.sv
+		../../RTL/ips/apb/apb_i2c/i2c_master_byte_ctrl.sv
+		../../RTL/ips/apb/apb_i2c/i2c_master_defines.sv
+		../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_master.sv
+		../../RTL/ips/axi/axi_slice_dc/axi_slice_dc_slave.sv
+		../../RTL/ips/axi/axi_slice_dc/dc_data_buffer.sv
+		../../RTL/ips/axi/axi_slice_dc/onehot_to_bin.sv
+		../../RTL/ips/axi/axi_slice_dc/dc_full_detector.v
+		../../RTL/ips/axi/axi_slice_dc/dc_synchronizer.v
+		../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_din.v
+		../../RTL/ips/axi/axi_slice_dc/dc_token_ring_fifo_dout.v
+		../../RTL/ips/axi/axi_slice_dc/dc_token_ring.v
+		../../RTL/ips/axi/axi_slice/axi_ar_buffer.sv
+		../../RTL/ips/axi/axi_slice/axi_aw_buffer.sv
+		../../RTL/ips/axi/axi_slice/axi_b_buffer.sv
+		../../RTL/ips/axi/axi_slice/axi_buffer.sv
+		../../RTL/ips/axi/axi_slice/axi_r_buffer.sv
+		../../RTL/ips/axi/axi_slice/axi_slice.sv
+		../../RTL/ips/axi/axi_slice/axi_w_buffer.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_axi_biu.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_axi_module.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_lint_biu.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_lint_module.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_crc32.v
+		../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_biu.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_module.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_or1k_status_reg.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_top.sv
+		../../RTL/ips/adv_dbg_if/rtl/bytefifo.v
+		../../RTL/ips/adv_dbg_if/rtl/syncflop.v
+		../../RTL/ips/adv_dbg_if/rtl/syncreg.v
+		../../RTL/ips/adv_dbg_if/rtl/adbg_tap_top.v
+		../../RTL/ips/adv_dbg_if/rtl/adv_dbg_if.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_axionly_top.sv
+		../../RTL/ips/adv_dbg_if/rtl/adbg_lintonly_top.sv
+		../../RTL/ips/apb/apb2per/apb2per.sv
+		../../RTL/tb/tb.sv
+		../../RTL/tb/if_spi_master.sv
+		../../RTL/tb/if_spi_slave.sv
+		../../RTL/tb/uart.sv
+		../../RTL/tb/i2c_eeprom_model.sv
+	-access +rwc
+	-define STIM_PATH="../"
+	-define PULP_FPGA_EMUL
+	-disable_sem2009
+	-v93
+	-timescale 1ps/1ps
+	-simvisargs ’-input
+	sim_wave.tcl’
+	-top tb
+	-gui
+xrun: *E,FMUK: The type of the file (sim_wave.tcl’) could not be determined.
+xrun: *E,FILEMIS: Cannot find the provided file sim_wave.tcl’.
+TOOL:	xrun(64)	21.03-s009: Exiting on Nov 07, 2024 at 10:36:01 CET  (total: 00:00:00)
